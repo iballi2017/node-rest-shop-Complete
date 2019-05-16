@@ -65,7 +65,7 @@ app.use((req, res, next) => {
 
     //Append the second header like below to tell the type of headers it should accept
     // res.header('Access-Control-Allow-Origin', '*'); ................to accept all header
-    // res.setHeader('Access-Control-Allow-Origin', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');  //to accept specific type of headers
+    res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');  //to accept specific type of headers
    
     // ........................................................
    
